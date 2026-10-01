@@ -1,0 +1,7 @@
+import type { Licence } from '@/types'
+
+export const licences: Licence[] = [
+  { id: 'LIC-5001', taskId: 'T-1005', partnerName: 'Naina Joshi', partnerNumber: '+91 98765 10005', clientName: 'Maya Interiors', clientNumber: '+91 97888 11234', licenceType: 'Permanent Licence', taskCategory: 'Company', serviceName: 'Private Limited Company Registration', licenceNumber: 'DL-4030-2026', issueDate: '2026-08-28', expiryDate: '2036-08-28', userId: 'U-2301', password: '*****', attachments: ['Certificate.pdf', 'Incorporation.png'], status: 'Active' },
+  { id: 'LIC-5002', taskId: 'T-1003', partnerName: 'Pooja Malhotra', partnerNumber: '+91 98765 10003', clientName: 'Orchid Wellness', clientNumber: '+91 99321 45678', licenceType: 'Permanent Licence', taskCategory: 'Trademark', serviceName: 'Trademark Registration', licenceNumber: 'TM-119923', issueDate: '2026-09-12', expiryDate: '2036-09-12', userId: 'U-2288', password: '*****', attachments: ['Trademark.pdf'], status: 'Active' },
+  { id: 'LIC-5003', taskId: 'T-1002', partnerName: 'Karan Shah', partnerNumber: '+91 98765 10002', clientName: 'Satyam Traders', clientNumber: '+91 98663 11223', licenceType: 'Renewal Licence', taskCategory: 'GST', serviceName: 'GST Registration', licenceNumber: 'GSTIN-29BXYZP', issueDate: '2026-09-04', expiryDate: '2027-09-04', userId: 'U-4412', password: '*****', attachments: ['GST.pdf'], status: 'Expiring Soon' },
+]
