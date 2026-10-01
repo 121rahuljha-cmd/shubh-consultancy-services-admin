@@ -1,0 +1,10 @@
+'use client'
+
+import Link from 'next/link'
+import { Bell, ChevronDown, Search } from 'lucide-react'
+import { useState } from 'react'
+
+export function Header() {
+  const [open, setOpen] = useState(false)
+  return <header className="flex min-h-20 items-center justify-between gap-4 border-b border-slate-200 bg-white px-4 py-3 sm:px-6"><div className="flex min-w-0 flex-1 items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-3 py-2"><Search className="h-4 w-4 shrink-0 text-slate-400" /><input className="w-full bg-transparent text-sm outline-none" placeholder="Search clients, tasks, services, documents..." /></div><div className="flex items-center gap-3"><Link href="/admin/notifications" className="relative rounded-xl border border-slate-200 bg-slate-50 p-2 text-slate-600"><Bell className="h-5 w-5" /><span className="absolute -right-1 -top-1 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-[9px] text-white">3</span></Link><div className="relative"><button onClick={() => setOpen(!open)} className="flex items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 p-1.5 sm:px-2"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#2d7ff7] text-xs font-bold text-white">AS</span><span className="hidden text-left sm:block"><span className="block text-xs font-semibold text-slate-800">Ankit Sharma</span><span className="block text-[11px] text-slate-500">Admin</span></span><ChevronDown className="hidden h-4 w-4 text-slate-500 sm:block" /></button>{open && <div className="absolute right-0 top-12 z-20 w-48 rounded-xl border border-slate-200 bg-white p-2 shadow-xl"><Link href="/admin/settings" className="block rounded-lg px-3 py-2 text-sm hover:bg-slate-50">Profile & Settings</Link><Link href="/admin/notifications" className="block rounded-lg px-3 py-2 text-sm hover:bg-slate-50">Notifications</Link><button className="w-full rounded-lg px-3 py-2 text-left text-sm hover:bg-slate-50">Logout</button></div>}</div></div></header>
+}

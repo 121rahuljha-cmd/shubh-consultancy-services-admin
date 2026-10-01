@@ -1,0 +1,3 @@
+import { cn } from '@/lib/utils'
+
+export function StatusBadge({ status }: { status: string }) { const colors: Record<string, string> = { Active: 'bg-emerald-100 text-emerald-700', Completed: 'bg-emerald-100 text-emerald-700', Pending: 'bg-amber-100 text-amber-700', 'In Progress': 'bg-blue-100 text-blue-700', Overdue: 'bg-red-100 text-red-700', Popular: 'bg-violet-100 text-violet-700', New: 'bg-blue-100 text-blue-700', Qualified: 'bg-emerald-100 text-emerald-700', Prospect: 'bg-violet-100 text-violet-700' }; return <span className={cn('inline-flex rounded-full px-2.5 py-1 text-xs font-semibold', colors[status] ?? 'bg-slate-100 text-slate-600')}>{status}</span> }
