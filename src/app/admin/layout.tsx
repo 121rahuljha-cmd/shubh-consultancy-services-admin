@@ -1,9 +1,6 @@
-'use client'
-
+import type { ReactNode } from 'react'
 import { AdminLayout } from '@/components/admin/AdminLayout'
 
-export const metadata = { title: 'Admin | Shubh Consultancy Services' }
-
-export default function RootAdminLayout({ children }: { children: React.ReactNode }) {
+export default function RootAdminLayout({ children }: { children: ReactNode }) {
   return <AdminLayout>{children}</AdminLayout>
 }
