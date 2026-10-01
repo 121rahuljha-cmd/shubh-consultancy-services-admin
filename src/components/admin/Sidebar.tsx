@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { BarChart3, BriefcaseBusiness, Building2, ClipboardList, FileCheck2, LayoutDashboard, Settings, ShieldCheck, Users } from 'lucide-react'
